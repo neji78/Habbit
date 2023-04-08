@@ -10,16 +10,70 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
-    <include android:id="@+id/news_title"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        layout="@layout/rlayout_edit_text"
-        />
-        <include android:id="@+id/news_description"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            layout="@layout/rlayout_edit_text"
-            />
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="روتین"
+                android:textSize="14pt"
+                android:gravity="center_vertical"
+                android:layout_marginRight="50dp"
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="نام روتین را وارد کنید"
+                android:layout_marginRight="50dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="روتین"
+                android:textSize="14pt"
+                android:gravity="center_vertical"
+                android:layout_marginRight="50dp"
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="نام روتین را وارد کنید"
+                android:layout_marginRight="50dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="روتین"
+                android:textSize="14pt"
+                android:gravity="center_vertical"
+                android:layout_marginRight="50dp"
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="نام روتین را وارد کنید"
+                android:layout_marginRight="50dp"
+                />
+        </LinearLayout>
+
 
     </LinearLayout>
 
