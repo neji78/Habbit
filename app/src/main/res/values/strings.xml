@@ -7,4 +7,12 @@
     <string name="routine_description_label">توصیفات</string>
     <string name="routine_times">Habbit</string>
     <string name="routine_times_number">Habbit</string>
+
+
+    <!--
+    MENU strings
+    -->
+    <string name="add_new_routine">افزودن روتین جدید</string>
+    <string name="setting">تنظیمات</string>
+    <string name="exit">خروج</string>
 </resources>
