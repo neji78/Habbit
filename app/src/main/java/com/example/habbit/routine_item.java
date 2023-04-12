@@ -1,3 +1,5 @@
+package com.example.habbit;
+
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -36,12 +38,12 @@ public class routine_item {
     private String m_routine_description;
     private int m_times;
     private ArrayList<Boolean> m_done;
-    public void routine_item()
+    public routine_item()
     {
         m_id = UUID.randomUUID();
         m_done = new ArrayList<Boolean>(7);
         for (int i = 0; i < 7; i++) {
-            m_done.set(i, false);
+            m_done.add(false);
         }
     }
     public void setField(int i,boolean ans)
