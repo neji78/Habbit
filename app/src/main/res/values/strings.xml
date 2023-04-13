@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">Habbit</string>
-    <string name="routine_name"></string>
-    <string name="routine_description"></string>
-    <string name="routine_hint">بیشتر بگو</string>
-    <string name="routine_label">روتین</string>
-    <string name="routine_description_label">توصیفات</string>
-    <string name="routine_times">Habbit</string>
-    <string name="routine_times_number">Habbit</string>
+    <string name="routine_name_label">روتین</string>
+    <string name="routine_name_hint">نام روتین را وارد کنید</string>
+    <string name="routine_description_label">جزئیات</string>
+    <string name="routine_description_hint">در مورد روتین بیشتر بگو</string>
+    <string name="routine_times_label">تعداد</string>
+    <string name="routine_date_label">تاریخ</string>
 
 
     <!--

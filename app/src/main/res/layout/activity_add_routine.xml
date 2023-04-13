@@ -5,29 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".addRoutine">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id = "@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:showDividers="middle"
+        android:layout_marginTop="50dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layoutDirection="rtl"
+            android:layout_marginTop="10dp"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="روتین"
+                android:text="@string/routine_name_label"
                 android:textSize="14pt"
                 android:gravity="center_vertical"
                 android:layout_marginRight="50dp"
 
                 />
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/routine_edit"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="نام روتین را وارد کنید"
+                android:hint="@string/routine_name_hint"
                 android:layout_marginRight="50dp"
                 />
         </LinearLayout>
@@ -35,46 +43,76 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layoutDirection="rtl"
+            android:layout_marginTop="50dp"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="روتین"
+                android:text="@string/routine_description_label"
                 android:textSize="14pt"
                 android:gravity="center_vertical"
                 android:layout_marginRight="50dp"
 
                 />
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/routine_description_edit"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="نام روتین را وارد کنید"
+                android:hint="@string/routine_description_hint"
                 android:layout_marginRight="50dp"
                 />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+             android:layout_height="wrap_content"
             android:layoutDirection="rtl"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="روتین"
+                android:text="@string/routine_times_label"
                 android:textSize="14pt"
                 android:gravity="center_vertical"
                 android:layout_marginRight="50dp"
-
                 />
-            <EditText
-                android:layout_width="wrap_content"
+            <NumberPicker
+                android:id="@+id/routine_times"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="نام روتین را وارد کنید"
                 android:layout_marginRight="50dp"
                 />
         </LinearLayout>
-
-
     </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            >
+            <ImageButton
+                android:id="@+id/done"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                android:src="@drawable/done_fill0_wght400_grad0_opsz48"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                />
+            <ImageButton
+                android:id="@+id/close_window"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                android:src="@drawable/close_fill0_wght400_grad0_opsz48"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

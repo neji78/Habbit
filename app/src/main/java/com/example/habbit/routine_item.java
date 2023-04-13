@@ -1,9 +1,10 @@
 package com.example.habbit;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class routine_item {
+public class routine_item implements Serializable {
     public UUID getM_id() {
         return m_id;
     }
